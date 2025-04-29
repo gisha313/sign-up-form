@@ -8,3 +8,34 @@ body {
   margin: 0;
   box-sizing: border-box;
 }
+
+.banner {
+  width: 40%;
+  height: 100vh;
+  background-image: url(./img/banner.jpg);
+  background-size: cover;
+  position: relative;
+}
+
+.logo-bar {
+  position: absolute;
+  top: 30%;
+  background: rgb(0, 0, 0, 0.5);
+  height: 150px;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-bar > img {
+  height: 100%;
+}
+
+.logo-bar span {
+  font-family: norse-bold, "Times New Roman", Times, serif;
+  font-size: 8rem;
+  color: #fff;
+  padding-left: 12px;
+}
