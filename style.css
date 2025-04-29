@@ -3,14 +3,20 @@
   src: url(./fonts/Norse-Bold.otf) format(opentype);
 }
 
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .banner {
-  width: 40%;
+  flex: 2;
   height: 100vh;
   background-image: url(./img/banner.jpg);
   background-size: cover;
@@ -52,4 +58,17 @@ body {
 .photo-by a,
 .photo-by a:visited {
   color: #fff;
+}
+
+.form-wrapper {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.before-form p {
+  font-weight: 600;
+  font-size: 1.8rem;
+  padding: 0 300px 2.5rem 3rem;
 }
