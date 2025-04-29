@@ -39,3 +39,17 @@ body {
   color: #fff;
   padding-left: 12px;
 }
+
+.photo-by {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  width: 100%;
+  text-align: right;
+  color: #fff;
+}
+
+.photo-by a,
+.photo-by a:visited {
+  color: #fff;
+}
