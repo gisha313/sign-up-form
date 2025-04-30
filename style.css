@@ -79,6 +79,7 @@ body {
 .input-container {
   background-color: #fff;
   padding: 1.6rem 0 3rem 3rem;
+  box-shadow: 5px 5px 20px 2px #ccc;
 }
 
 .input-container > h2 {
@@ -139,10 +140,40 @@ body {
 }
 
 .input-cell span {
-  height: 12px;
+  height: 8px;
 }
 
 .input-row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.confirm-btn {
+  border: none;
+  outline: none;
+
+  background: #224561;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.3rem;
+
+  padding: 16px 40px;
+  margin: 36px 0 30px 48px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px 2px #ccc;
+}
+
+.confirm-btn:hover {
+  background: #356b97;
+}
+
+form + p {
+  margin-left: 48px;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+form + p > a {
+  text-decoration: none;
+  color: #356b97;
 }
