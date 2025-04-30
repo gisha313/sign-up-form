@@ -13,6 +13,8 @@ body {
   height: 100vh;
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  font-size: 16px;
 }
 
 .banner {
@@ -65,10 +67,82 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: #eee;
 }
 
 .before-form p {
   font-weight: 600;
   font-size: 1.8rem;
   padding: 0 300px 2.5rem 3rem;
+}
+
+.input-container {
+  background-color: #fff;
+  padding: 1.6rem 0 3rem 3rem;
+}
+
+.input-container > h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.input-cell {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding-right: 100px;
+}
+
+.input-cell label {
+  margin: 24px 0 5px 0;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.input-cell input {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 300px;
+  line-height: 1.3;
+  font-size: 1.2rem;
+  padding: 0.4em 0.6em;
+  font-family: inherit;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+  outline: none;
+  box-sizing: border-box;
+}
+
+.input-cell input:focus,
+.input-cell input:active {
+  border: 1px solid #224561ff;
+  outline: 1px solid #224561ff;
+}
+
+.input-cell input:invalid {
+  border: 1px solid red;
+  outline: 1px solid red;
+}
+
+.input-cell input[type="password"]:invalid + span::after {
+  content: "Password must be at least 8 characters.";
+  display: block;
+  color: red;
+}
+
+.input-cell input[type="email"]:invalid + span::after {
+  content: "Enter a valid email adress.";
+  display: block;
+  color: red;
+}
+
+.input-cell span {
+  height: 12px;
+}
+
+.input-row {
+  display: flex;
+  flex-wrap: wrap;
 }

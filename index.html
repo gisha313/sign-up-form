@@ -33,29 +33,41 @@
         </div>
 
         <div class="form-container">
-            <form action="#" method="get">
+            <form action="#" method="get" autocomplete="off" spellcheck="false">
                 <div class="input-container">
                     <h2>Let's do this!</h2>
                     <div class="input-row">
-                        <label for="first-name">FIRST NAME</label>
-                        <input type="text" id="first-name" name="first-name">
-
-                        <label for="last-name">LAST NAME</label>
-                        <input type="text" name="last-name" id="last-name">
+                        <div class="input-cell">
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" id="first-name" name="first-name">
+                            <span></span>
+                        </div>
+                        <div class="input-cell">
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" name="last-name" id="last-name">
+                        </div>
                     </div>
                     <div class="input-row">
-                        <label for="email">EMAIL</label>
-                        <input type="email" name="email" id="email">
-
-                        <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone" id="phone">
+                        <div class="input-cell">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                            <span></span>
+                        </div>
+                        <div class="input-cell">
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" name="phone" id="phone">
+                        </div>
                     </div>
                     <div class="input-row">
-                        <label for="pwd">PASSWORD</label>
-                        <input type="password" name="pwd" id="pwd">
-
-                        <label for="confirm_pwd">CONFIRM PASSWORD</label>
-                        <input type="password" name="confirm_pwd" id="confirm_pwd">
+                        <div class="input-cell">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" name="pwd" id="pwd" minlength="8">
+                            <span></span>
+                        </div>
+                        <div class="input-cell">
+                            <label for="confirm_pwd">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirm_pwd" id="confirm_pwd" minlength="8">
+                        </div>
                     </div>
                 </div>
                 <button>Create Account</button>
