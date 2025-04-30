@@ -10,7 +10,8 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  height: fit-content;
   display: flex;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #222;
@@ -22,7 +23,8 @@ body {
   height: 100vh;
   background-image: url(./img/banner.jpg);
   background-size: cover;
-  position: relative;
+  position: sticky;
+  top: 0;
 }
 
 .logo-bar {
@@ -167,13 +169,13 @@ body {
   background: #356b97;
 }
 
-form + p {
+form p {
   margin-left: 48px;
   font-weight: 600;
   font-size: 1.1rem;
 }
 
-form + p > a {
+form p > a {
   text-decoration: none;
   color: #356b97;
 }
